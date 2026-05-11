@@ -31,8 +31,9 @@ SetAttribute(g,h)end end return f end local b=create('ScreenGui',{ScreenInsets=
 Enum.ScreenInsets.DeviceSafeInsets,ZIndexBehavior=Enum.ZIndexBehavior.Sibling,
 ResetOnSpawn=false,Parent=game.StarterGui,Name='StudioUI'})::ScreenGui local c=
 create('Frame',{BorderColor3=Color3.fromRGB(0,0,0),AnchorPoint=Vector2.new(0.5,
-0.5),Parent=b,BackgroundTransparency=1,Position=UDim2.fromScale(0.5,0.5),Name=
-'Container',Size=UDim2.fromScale(0.75,0.75),BorderSizePixel=0,BackgroundColor3=
+0.5),Parent=b,BackgroundTransparency=1,Position=UDim2.fromScale(
+0.3492363691329956,0.34923630952835083),Name='Container',Size=UDim2.fromScale(
+0.4484727084636688,0.44847267866134644),BorderSizePixel=0,BackgroundColor3=
 Color3.fromRGB(255,255,255)})::Frame create('ImageLabel',{ImageColor3=Color3.
 fromRGB(170,0,255),ImageTransparency=0.5,BorderColor3=Color3.fromRGB(0,0,0),
 Image='rbxassetid://90166083119663',BackgroundTransparency=1,Parent=c,Name=
@@ -294,9 +295,9 @@ TextLabel create('UICorner',{TopLeftRadius=UDim.new(0.20000000298023224,0),
 TopRightRadius=UDim.new(0.20000000298023224,0),BottomRightRadius=UDim.new(
 0.20000000298023224,0),Parent=z,BottomLeftRadius=UDim.new(0.20000000298023224,0)
 })local A=create('Frame',{Visible=false,BorderColor3=Color3.fromRGB(0,0,0),
-Parent=b,BackgroundTransparency=0.5,Position=UDim2.fromScale(0.5828754305839539,
-0.5415031313896179),Name='InfoFrame',Size=UDim2.fromScale(0.2308942824602127,
-0.06393005698919296),BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(0,0,0)})
+Parent=b,BackgroundTransparency=0.5,Position=UDim2.fromScale(0.39879289269447327
+,0.3740536868572235),Name='InfoFrame',Size=UDim2.fromScale(0.13806629180908203,
+0.038227807730436325),BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(0,0,0)})
 ::Frame create('UIStroke',{Color=Color3.fromRGB(170,0,255),Parent=A,
 ApplyStrokeMode=Enum.ApplyStrokeMode.Border})create('UICorner',{TopLeftRadius=
 UDim.new(0.10000000149011612,0),TopRightRadius=UDim.new(0.10000000149011612,0),

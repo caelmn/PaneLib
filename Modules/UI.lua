@@ -46,9 +46,9 @@ local Container = create("Frame", {
 	AnchorPoint = Vector2.new(0.5, 0.5), 
 	Parent = StudioUI, 
 	BackgroundTransparency = 1, 
-	Position = UDim2.fromScale(0.5, 0.5), 
+	Position = UDim2.fromScale(0.3492363691329956, 0.34923630952835083), 
 	Name = "Container", 
-	Size = UDim2.fromScale(0.75, 0.75), 
+	Size = UDim2.fromScale(0.4484727084636688, 0.44847267866134644), 
 	BorderSizePixel = 0, 
 	BackgroundColor3 = Color3.fromRGB(255, 255, 255), 
 }) :: Frame
@@ -826,9 +826,9 @@ local InfoFrame = create("Frame", {
 	BorderColor3 = Color3.fromRGB(0, 0, 0), 
 	Parent = StudioUI, 
 	BackgroundTransparency = 0.5, 
-	Position = UDim2.fromScale(0.5828754305839539, 0.5415031313896179), 
+	Position = UDim2.fromScale(0.39879289269447327, 0.3740536868572235), 
 	Name = "InfoFrame", 
-	Size = UDim2.fromScale(0.2308942824602127, 0.06393005698919296), 
+	Size = UDim2.fromScale(0.13806629180908203, 0.038227807730436325), 
 	BorderSizePixel = 0, 
 	BackgroundColor3 = Color3.fromRGB(0, 0, 0), 
 }) :: Frame
