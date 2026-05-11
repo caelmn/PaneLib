@@ -115,23 +115,24 @@ FontFace=Font.new('rbxasset://fonts/families/Inconsolata.json',Enum.FontWeight.
 Regular,Enum.FontStyle.Normal),TextSize=14,TextScaled=true,BackgroundColor3=
 Color3.fromRGB(255,255,255)})create('UIListLayout',{Parent=i,Padding=UDim.new(
 0.009999999776482582,0),SortOrder=Enum.SortOrder.LayoutOrder})local k=create(
-'ScrollingFrame',{ScrollBarImageColor3=Color3.fromRGB(0,0,0),Active=true,
-AutomaticCanvasSize=Enum.AutomaticSize.Y,ScrollBarThickness=0,Parent=h,Name=
-'Modules',Size=UDim2.fromScale(0.7400000095367432,1),LayoutOrder=1,
-BackgroundTransparency=1,Position=UDim2.fromScale(9.363518671534621e-8,-
-9.757093977214026E-8),BackgroundColor3=Color3.fromRGB(255,255,255),BorderColor3=
-Color3.fromRGB(0,0,0),BorderSizePixel=0,CanvasSize=UDim2.fromScale(0,0)})::
-ScrollingFrame local l=create('Folder',{Name='Pages',Parent=k})::Folder local m=
-create('Frame',{Visible=false,BorderColor3=Color3.fromRGB(0,0,0),AnchorPoint=
-Vector2.new(0.5,0.5),Parent=l,BackgroundTransparency=1,Position=UDim2.fromScale(
-0.5,0.5),Name='TemplatePage',Size=UDim2.fromScale(1,1),BorderSizePixel=0,
-BackgroundColor3=Color3.fromRGB(255,255,255)})::Frame create('UIListLayout',{
-Parent=m,Padding=UDim.new(0.014999999664723873,0),HorizontalAlignment=Enum.
-HorizontalAlignment.Center,SortOrder=Enum.SortOrder.LayoutOrder})local n=create(
-'Frame',{Visible=false,BorderColor3=Color3.fromRGB(0,0,0),AnchorPoint=Vector2.
-new(0.5,0.5),BackgroundTransparency=0.75,Parent=m,Name='TemplateTextBox',Size=
-UDim2.fromScale(1,0.125),BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(170,0
-,255)})::Frame create('UICorner',{TopLeftRadius=UDim.new(0.20000000298023224,0),
+'Frame',{LayoutOrder=1,ClipsDescendants=true,BorderColor3=Color3.fromRGB(0,0,0),
+Parent=h,Name='Modules',SelectionGroup=true,Size=UDim2.fromScale(
+0.7400000095367432,1),BackgroundTransparency=1,Position=UDim2.fromScale(
+9.363518671534621e-8,-9.757093977214026E-8),Selectable=true,Active=true,
+BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(255,255,255)})::Frame local l=
+create('Folder',{Name='Pages',Parent=k})::Folder local m=create('ScrollingFrame'
+,{Visible=false,Parent=l,ClipsDescendants=false,AutomaticCanvasSize=Enum.
+AutomaticSize.Y,ScrollBarThickness=0,Name='TemplatePage',Size=UDim2.fromScale(1,
+1),AnchorPoint=Vector2.new(0.5,0.5),Selectable=false,BackgroundTransparency=1,
+Position=UDim2.fromScale(0.5,0.5),BackgroundColor3=Color3.fromRGB(255,255,255),
+BorderColor3=Color3.fromRGB(0,0,0),BorderSizePixel=0,CanvasSize=UDim2.fromScale(
+0,0)})::ScrollingFrame create('UIListLayout',{Parent=m,Padding=UDim.new(
+0.014999999664723873,0),HorizontalAlignment=Enum.HorizontalAlignment.Center,
+SortOrder=Enum.SortOrder.LayoutOrder})local n=create('Frame',{Visible=false,
+BorderColor3=Color3.fromRGB(0,0,0),AnchorPoint=Vector2.new(0.5,0.5),
+BackgroundTransparency=0.75,Parent=m,Name='TemplateTextBox',Size=UDim2.
+fromScale(1,0.125),BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(170,0,255)}
+)::Frame create('UICorner',{TopLeftRadius=UDim.new(0.20000000298023224,0),
 TopRightRadius=UDim.new(0.20000000298023224,0),BottomRightRadius=UDim.new(
 0.20000000298023224,0),Parent=n,BottomLeftRadius=UDim.new(0.20000000298023224,0)
 })create('TextLabel',{TextWrapped=true,Parent=n,TextColor3=Color3.fromRGB(255,
@@ -293,12 +294,12 @@ TextLabel create('UICorner',{TopLeftRadius=UDim.new(0.20000000298023224,0),
 TopRightRadius=UDim.new(0.20000000298023224,0),BottomRightRadius=UDim.new(
 0.20000000298023224,0),Parent=z,BottomLeftRadius=UDim.new(0.20000000298023224,0)
 })local A=create('Frame',{Visible=false,BorderColor3=Color3.fromRGB(0,0,0),
-Parent=b,BackgroundTransparency=0.5,Position=UDim2.fromScale(0.5828753709793091,
-0.5415031313896179),Name='InfoFrame',Size=UDim2.fromScale(0.231,0.064),
-BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(0,0,0)})::Frame create(
-'UIStroke',{Color=Color3.fromRGB(170,0,255),Parent=A,ApplyStrokeMode=Enum.
-ApplyStrokeMode.Border})create('UICorner',{TopLeftRadius=UDim.new(
-0.10000000149011612,0),TopRightRadius=UDim.new(0.10000000149011612,0),
+Parent=b,BackgroundTransparency=0.5,Position=UDim2.fromScale(0.5828754305839539,
+0.5415031313896179),Name='InfoFrame',Size=UDim2.fromScale(0.2308942824602127,
+0.06393005698919296),BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(0,0,0)})
+::Frame create('UIStroke',{Color=Color3.fromRGB(170,0,255),Parent=A,
+ApplyStrokeMode=Enum.ApplyStrokeMode.Border})create('UICorner',{TopLeftRadius=
+UDim.new(0.10000000149011612,0),TopRightRadius=UDim.new(0.10000000149011612,0),
 BottomRightRadius=UDim.new(0.10000000149011612,0),Parent=A,BottomLeftRadius=UDim
 .new(0.10000000149011612,0)})create('UIPadding',{PaddingTop=UDim.new(
 0.014999999664723873,0),PaddingBottom=UDim.new(0.014999999664723873,0),Parent=A,

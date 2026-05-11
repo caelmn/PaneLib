@@ -302,40 +302,44 @@ create("UIListLayout", {
 	SortOrder = Enum.SortOrder.LayoutOrder, 
 })
 
-local Modules = create("ScrollingFrame", { 
-	ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0), 
-	Active = true, 
-	AutomaticCanvasSize = Enum.AutomaticSize.Y, 
-	ScrollBarThickness = 0, 
+local Modules = create("Frame", { 
+	LayoutOrder = 1, 
+	ClipsDescendants = true, 
+	BorderColor3 = Color3.fromRGB(0, 0, 0), 
 	Parent = Container_1, 
 	Name = "Modules", 
+	SelectionGroup = true, 
 	Size = UDim2.fromScale(0.7400000095367432, 1), 
-	LayoutOrder = 1, 
 	BackgroundTransparency = 1, 
 	Position = UDim2.fromScale(9.363518671534621e-08, -9.757093977214026e-08), 
-	BackgroundColor3 = Color3.fromRGB(255, 255, 255), 
-	BorderColor3 = Color3.fromRGB(0, 0, 0), 
+	Selectable = true, 
+	Active = true, 
 	BorderSizePixel = 0, 
-	CanvasSize = UDim2.fromScale(0, 0), 
-}) :: ScrollingFrame
+	BackgroundColor3 = Color3.fromRGB(255, 255, 255), 
+}) :: Frame
 
 local Pages = create("Folder", { 
 	Name = "Pages", 
 	Parent = Modules, 
 }) :: Folder
 
-local TemplatePage = create("Frame", { 
+local TemplatePage = create("ScrollingFrame", { 
 	Visible = false, 
-	BorderColor3 = Color3.fromRGB(0, 0, 0), 
-	AnchorPoint = Vector2.new(0.5, 0.5), 
 	Parent = Pages, 
-	BackgroundTransparency = 1, 
-	Position = UDim2.fromScale(0.5, 0.5), 
+	ClipsDescendants = false, 
+	AutomaticCanvasSize = Enum.AutomaticSize.Y, 
+	ScrollBarThickness = 0, 
 	Name = "TemplatePage", 
 	Size = UDim2.fromScale(1, 1), 
-	BorderSizePixel = 0, 
+	AnchorPoint = Vector2.new(0.5, 0.5), 
+	Selectable = false, 
+	BackgroundTransparency = 1, 
+	Position = UDim2.fromScale(0.5, 0.5), 
 	BackgroundColor3 = Color3.fromRGB(255, 255, 255), 
-}) :: Frame
+	BorderColor3 = Color3.fromRGB(0, 0, 0), 
+	BorderSizePixel = 0, 
+	CanvasSize = UDim2.fromScale(0, 0), 
+}) :: ScrollingFrame
 
 create("UIListLayout", { 
 	Parent = TemplatePage, 
@@ -822,9 +826,9 @@ local InfoFrame = create("Frame", {
 	BorderColor3 = Color3.fromRGB(0, 0, 0), 
 	Parent = StudioUI, 
 	BackgroundTransparency = 0.5, 
-	Position = UDim2.fromScale(0.5828753709793091, 0.5415031313896179), 
+	Position = UDim2.fromScale(0.5828754305839539, 0.5415031313896179), 
 	Name = "InfoFrame", 
-	Size = UDim2.fromScale(0.231, 0.064), 
+	Size = UDim2.fromScale(0.2308942824602127, 0.06393005698919296), 
 	BorderSizePixel = 0, 
 	BackgroundColor3 = Color3.fromRGB(0, 0, 0), 
 }) :: Frame
