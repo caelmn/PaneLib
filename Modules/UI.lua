@@ -37,7 +37,7 @@ local StudioUI = create("ScreenGui", {
 	ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets, 
 	ZIndexBehavior = Enum.ZIndexBehavior.Sibling, 
 	ResetOnSpawn = false, 
-	Parent = game.StarterGui, 
+	Parent = gethui(), 
 	Name = "StudioUI", 
 }) :: ScreenGui
 

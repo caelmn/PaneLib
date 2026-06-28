@@ -29,18 +29,18 @@ if c then for g,h in next,c do local i,j=pcall(function()(f::any)[g]=h end)if
 not i then warn(j)return nil end end end if d then for g,h in pairs(d)do f:
 SetAttribute(g,h)end end return f end local b=create('ScreenGui',{ScreenInsets=
 Enum.ScreenInsets.DeviceSafeInsets,ZIndexBehavior=Enum.ZIndexBehavior.Sibling,
-ResetOnSpawn=false,Parent=game.StarterGui,Name='StudioUI'})::ScreenGui local c=
-create('Frame',{BorderColor3=Color3.fromRGB(0,0,0),AnchorPoint=Vector2.new(0.5,
-0.5),Parent=b,BackgroundTransparency=1,Position=UDim2.fromScale(
-0.3492363691329956,0.34923630952835083),Name='Container',Size=UDim2.fromScale(
-0.4484727084636688,0.44847267866134644),BorderSizePixel=0,BackgroundColor3=
-Color3.fromRGB(255,255,255)})::Frame create('ImageLabel',{ImageColor3=Color3.
-fromRGB(170,0,255),ImageTransparency=0.5,BorderColor3=Color3.fromRGB(0,0,0),
-Image='rbxassetid://90166083119663',BackgroundTransparency=1,Parent=c,Name=
-'Glow',Size=UDim2.fromScale(1,1),BorderSizePixel=0,BackgroundColor3=Color3.
-fromRGB(255,255,255)})local d=create('Frame',{BorderColor3=Color3.fromRGB(0,0,0)
-,AnchorPoint=Vector2.new(0.5,0.5),Parent=c,BackgroundTransparency=0.5,Position=
-UDim2.fromScale(0.5,0.44999998807907104),Name='MainFrame',Size=UDim2.fromScale(
+ResetOnSpawn=false,Parent=gethui(),Name='StudioUI'})::ScreenGui local c=create(
+'Frame',{BorderColor3=Color3.fromRGB(0,0,0),AnchorPoint=Vector2.new(0.5,0.5),
+Parent=b,BackgroundTransparency=1,Position=UDim2.fromScale(0.3492363691329956,
+0.34923630952835083),Name='Container',Size=UDim2.fromScale(0.4484727084636688,
+0.44847267866134644),BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(255,255,
+255)})::Frame create('ImageLabel',{ImageColor3=Color3.fromRGB(170,0,255),
+ImageTransparency=0.5,BorderColor3=Color3.fromRGB(0,0,0),Image=
+'rbxassetid://90166083119663',BackgroundTransparency=1,Parent=c,Name='Glow',Size
+=UDim2.fromScale(1,1),BorderSizePixel=0,BackgroundColor3=Color3.fromRGB(255,255,
+255)})local d=create('Frame',{BorderColor3=Color3.fromRGB(0,0,0),AnchorPoint=
+Vector2.new(0.5,0.5),Parent=c,BackgroundTransparency=0.5,Position=UDim2.
+fromScale(0.5,0.44999998807907104),Name='MainFrame',Size=UDim2.fromScale(
 0.699999988079071,0.699999988079071),BorderSizePixel=0,BackgroundColor3=Color3.
 fromRGB(0,0,0)})::Frame create('UIStroke',{Color=Color3.fromRGB(170,0,255),
 Parent=d,ApplyStrokeMode=Enum.ApplyStrokeMode.Border})create('UICorner',{
